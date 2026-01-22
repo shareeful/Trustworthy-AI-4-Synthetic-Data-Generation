@@ -1,0 +1,41 @@
+# Model Architecture Hyperparameters
+
+vae:
+  encoder:
+    layers: [128, 64, 32]
+    activation: "relu"
+    dropout: 0.0
+  latent_dim: 16
+  decoder:
+    layers: [64, 128]
+    activation: "relu"
+    output_activation: "sigmoid"
+
+gan:
+  generator:
+    layers: [64, 128]
+    activation: "relu"
+    output_activation: "sigmoid"
+  discriminator:
+    layers: [128, 64]
+    activation: "leaky_relu"
+    leaky_relu_slope: 0.2
+    dropout: 0.3
+
+training:
+  batch_size: 64
+  learning_rate: 0.0002
+  adam_beta1: 0.5
+  adam_beta2: 0.999
+  max_epochs: 200
+  monitor_frequency: 10  # Evaluate compliance every N epochs
+  early_stopping_patience: 50
+
+translation_mechanism:
+  alpha: 5.0  # Scaling factor for T-AI priorities
+  beta: 0.5   # Bias to prevent complete constraint neglect
+  
+closed_loop:
+  weight_increment: 0.1  # Adjustment step size
+  max_cycles: 50         # Maximum adjustment cycles
+  convergence_window: 3  # Epochs to verify stable compliance
