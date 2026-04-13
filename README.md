@@ -2,9 +2,7 @@
 
 Source code for the paper **"Operationalizing Trustworthy AI Practice for Synthetic Data Generation"**.
 
-## Overview
 
-This repository implements a four-phase requirements-driven approach that operationalises EU AI Act obligations — fairness (Article 6), security (Article 15), and explainability (Article 13) — as active training constraints for synthetic tabular data generation.
 
 ## Repository Structure
 
