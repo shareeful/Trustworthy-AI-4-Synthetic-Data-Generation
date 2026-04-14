@@ -18,8 +18,8 @@ trustworthy_synthetic/
 │   └── compliance_engine.py    Phase 4: Closed-Loop Compliance Engine
 ├── experiments/
 │   ├── run_profile_p1.py       Profile P-1: fairness experiment
-│   ├── run_profile_p3.py       Profile P-2: security experiment
-│   ├── run_profile_p3_exp.py   Profile P-3: explainability experiment
+│   ├── run_profile_p2.py       Profile P-2: security experiment
+│   ├── run_profile_p3.py   Profile P-3: explainability experiment
 │   └── run_ablation.py         Cumulative ablation study
 ├── utils/
 │   └── metrics.py              T-AI metric computation
